@@ -20,11 +20,14 @@ python -m virtualenv venv
 Activate created virtual environment 'venv'
 
 ```bash
-# For unix
+# For Linux/MacOS
 source venv/bin/activate
 
-# For windows
-.\venv\Scripts\activate
+# For Windows (command prompt)
+venv\bin\activate.bat
+
+# For Windows (power shell)
+venv\Scripts\Activate.ps1
 ```
 
 Finally, you can install requirements
@@ -33,7 +36,7 @@ The following command will install the latest version of the utilities
 ```bash
 pip install -r requirements.txt
 ```
-
+This command will install **cyberoo_utils** and **requests**
 
 **NOTE**: it tells to have a python version 3.6+
 
@@ -55,3 +58,12 @@ Add customer credentials to **customer** folder, this file has to be json file w
   }
 ```
 
+Use following command to run script:
+
+```bash
+# Windows
+python main.py
+
+# Linux
+python3 main.py
+```
