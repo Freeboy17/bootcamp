@@ -1,6 +1,6 @@
 # CheckpointAnalyzer
 
-#### This script allows to get logs from checkpoint API
+#### This script allows to get logs from Сheckpoint API
 
 #### instalation
 
@@ -57,6 +57,7 @@ Add customer credentials to **customer** folder, this file has to be json file w
 
   }
 ```
+
 
 Use following command to run script:
 
