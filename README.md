@@ -62,11 +62,7 @@ Add customer credentials to **customer** folder, this file has to be json file w
 Use following command to run script:
 
 ```bash
-# Windows
 python main.py
-
-# Linux
-python3 main.py
 ```
 
 Logs will be saved in **/var/log/checkpoint-analyzer/checkpoint** directory
