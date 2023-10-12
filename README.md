@@ -23,9 +23,6 @@ Activate created virtual environment 'venv'
 # For Linux/MacOS
 source venv/bin/activate
 
-# For Windows (command prompt)
-venv\bin\activate.bat
-
 # For Windows (power shell)
 venv\Scripts\Activate.ps1
 ```
@@ -57,7 +54,10 @@ Add customer credentials to **customer** folder, this file has to be json file w
 
   }
 ```
-
+- **api_key**: The api_key is API key often generated and provided by the organization or service that is using Checkpoint. [Here](https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_SecurityManagement_AdminGuide/Topics-SECMG/Configuring_Authentication_through_an_API_Key.htm), you can find instructions how to generate api key.
+- **server**: This value is meant to be IP address of the api server.
+- **port**: This value is meant to be api server port.
+- **username**: User name used to login into checkpoint API.
 
 Use following command to run script:
 
@@ -68,3 +68,5 @@ python main.py
 # Linux
 python3 main.py
 ```
+
+Logs will be saved in **/var/log/checkpoint-analyzer/checkpoint** directory
